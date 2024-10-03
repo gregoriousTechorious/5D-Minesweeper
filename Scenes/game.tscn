@@ -1,11 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bga64sm878vcn"]
+[gd_scene load_steps=2 format=3 uid="uid://glucsb4io4rw"]
 
-[ext_resource type="Texture2D" uid="uid://qop0vvna7fhq" path="res://Assets/Graphics/peashooter.jpg" id="1_a4svj"]
+[ext_resource type="Script" path="res://Scenes/Game.cs" id="1_3l3yj"]
 
-[node name="Game" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(184, 202)
-texture = ExtResource("1_a4svj")
-
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Game" type="Node3D"]
+script = ExtResource("1_3l3yj")

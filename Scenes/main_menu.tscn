@@ -16,21 +16,47 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="GridContainer" type="GridContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/GridContainer/HBoxContainer"]
 layout_mode = 2
 text = "Play"
 
-[node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Options" type="Button" parent="MarginContainer/GridContainer/HBoxContainer"]
 layout_mode = 2
 text = "Options"
 
-[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Exit" type="Button" parent="MarginContainer/GridContainer/HBoxContainer"]
 layout_mode = 2
 text = "Exit"
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="OnPlayPressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="OnOptionsPressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="OnExitPressed"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="Dimension1" type="LineEdit" parent="MarginContainer/GridContainer/HBoxContainer2"]
+layout_mode = 2
+text = "4"
+
+[node name="Dimension2" type="LineEdit" parent="MarginContainer/GridContainer/HBoxContainer2"]
+layout_mode = 2
+text = "4"
+
+[node name="Dimension3" type="LineEdit" parent="MarginContainer/GridContainer/HBoxContainer2"]
+layout_mode = 2
+text = "4"
+
+[node name="Dimension4" type="LineEdit" parent="MarginContainer/GridContainer/HBoxContainer2"]
+layout_mode = 2
+text = "4"
+
+[node name="Dimension5" type="LineEdit" parent="MarginContainer/GridContainer/HBoxContainer2"]
+layout_mode = 2
+text = "4"
+
+[connection signal="pressed" from="MarginContainer/GridContainer/HBoxContainer/Play" to="." method="OnPlayPressed"]
+[connection signal="pressed" from="MarginContainer/GridContainer/HBoxContainer/Options" to="." method="OnOptionsPressed"]
+[connection signal="pressed" from="MarginContainer/GridContainer/HBoxContainer/Exit" to="." method="OnExitPressed"]
