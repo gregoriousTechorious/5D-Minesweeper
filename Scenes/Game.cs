@@ -4,7 +4,7 @@ using System;
 public partial class Game : Node3D
 {
 
-	HyperCube[][][][][] board;
+	
 
 
 	// Called when the node enters the scene tree for the first time.

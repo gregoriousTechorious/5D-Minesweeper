@@ -14,6 +14,10 @@ config/name="5D Minesweeper"
 run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "C#", "Mobile")
 
+[autoload]
+
+Global="*res://Scenes/Global.cs"
+
 [dotnet]
 
 project/assembly_name="5D Minesweeper"

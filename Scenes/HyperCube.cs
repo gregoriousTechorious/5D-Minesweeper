@@ -12,7 +12,7 @@ public partial class HyperCube : Node3D
 	public HyperCube(int[] pos)
 	{
 		this.position = pos;
-		Console.WriteLine("new hypercube");
+		GD.Print("new hypercube");
 	}
 
 	// Called when the node enters the scene tree for the first time.
